@@ -14,14 +14,5 @@ def key_for_min_value(name_hash)
     value_array << value 
   end 
   
-  call_key = "this will be the right key"
-  
-   i = 0 
-   while i < value_array.length 
-     if min_num >= value_array[i]
-       min_num = value_array[i]
-       call_key = key_array[i]
-     end 
-   end
-
+ 
 end 
