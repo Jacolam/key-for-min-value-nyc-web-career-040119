@@ -6,10 +6,12 @@
 
 def key_for_min_value(hash)
   
- lowest =  
- key = nil
+ value_array = [] 
+ key_array = []
  
- hash.collect do |key,value|
-   value 
+ hash.each do |key,value|
+   value_array << value
+   key_array << key 
+ end 
  
 end
