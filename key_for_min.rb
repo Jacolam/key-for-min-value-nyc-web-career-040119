@@ -4,23 +4,14 @@
 #key_for_min_value(ikea)
 # => :chair
 
-def key_for_min_value(name_hash)
-  key_array = []
-  value_array = []
-  min_num = nil
-  
-  name_hash.each do |key,value|
-    key_array << key 
-    value_array << value 
-  end 
-  
-  key_caller = nil
-  
-  name_hash.each do |key,value|
-    if min_num > value
-      min_num = value
-      key_caller = key
-    end  
-    
- min_num
-end 
+def key_for_min_value(hash)
+  lowest_key = nil
+  lowest_value = nil
+  hash.each do |k, v|
+    if lowest_value == nil || v < lowest_value
+      lowest_value = v
+      lowest_key = k
+    end
+  end
+  lowest_key
+end
