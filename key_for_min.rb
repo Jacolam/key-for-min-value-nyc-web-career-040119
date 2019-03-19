@@ -14,4 +14,7 @@ def key_for_min_value(hash)
    key_array << key 
  end 
  
+ lowest = value_array[0] # assume this is the lowest
+ lowest_key = key_array[0]
+ 
 end
