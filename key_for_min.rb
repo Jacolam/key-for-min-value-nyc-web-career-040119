@@ -5,8 +5,11 @@
 # => :chair
 
 def key_for_min_value(hash)
+  
+ lowest =  
+ key = nil
  
- hash.each do |key,value|
-   
+ hash.collect do |key,value|
+   value 
  
 end
