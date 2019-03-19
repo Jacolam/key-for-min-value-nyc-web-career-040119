@@ -17,4 +17,14 @@ def key_for_min_value(hash)
  lowest = value_array[0] # assume this is the lowest
  lowest_key = key_array[0]
  
+ hash.each do |key,value|
+   if lowest > value
+     lowest = value
+     lowest_key = key
+   end 
+   
+ end 
+ 
+ lowest_key
+ 
 end
